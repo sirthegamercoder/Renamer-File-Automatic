@@ -36,7 +36,7 @@ function Rename-FilesInSubfolders {
             continue
         }
 
-        $counter = 1
+        $counter = 0
         $renamedCount = 0
         
         foreach ($file in $files) {
