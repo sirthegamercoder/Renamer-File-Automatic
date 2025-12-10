@@ -42,7 +42,7 @@ function Rename-FilesInSubfolders {
         foreach ($file in $files) {
             $sequenceNumber = $counter.ToString("0000")
 
-            $newName = "${baseName}_${sequenceNumber}$($file.Extension)"
+            $newName = "${baseName}${sequenceNumber}$($file.Extension)"
             $newPath = Join-Path -Path $subfolder.FullName -ChildPath $newName
             
             try {
